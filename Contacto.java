@@ -17,4 +17,8 @@ public class Contacto{
         System.out.println("=== Contacto ===\nNombre: "+nombre+"\nCuenta: "+cuentaDestino+"\nBanco: "+banco+"Favorito: "+fav);
     }
 
+    public void marcarFavorito(){
+        favorito = true;
+        System.out.println(nombre + "agregado a favoritos ⭐.");
+    }
 }
