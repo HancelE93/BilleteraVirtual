@@ -18,4 +18,12 @@ public class Transaccion {
         System.out.println("Descripción: " + descripcion);
         System.out.println("Estado: " + (exitosa ? "Exitosa" : "Fallida"));
     }
+
+    public void aplicarComision(double porcentaje) {
+        double comision = monto * (porcentaje / 100);
+        double total = monto + comision;
+
+        System.out.println("Comisión (" + porcentaje + "%): $" + comision);
+        System.out.println("Monto total con comisión: $" + total);
+    }
 }
