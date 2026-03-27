@@ -4,11 +4,17 @@ public class Contacto{
     private String banco;
     private boolean favorito;
 
-    public void Contacto(String nombre, String cuentaDestino, String banco){
+    public Contacto(String nombre, String cuentaDestino, String banco){
         this.nombre = nombre;
         this.cuentaDestino = cuentaDestino;
         this.banco = banco;
         this.favorito = false;
+    }
+
+    public void mostrarContacto(){
+        String fav = "Sin Marcar";
+        if(favorito){fav = "⭐ Favorito"}
+        System.out.println("=== Contacto ===\nNombre: "+nombre+"\nCuenta: "+cuentaDestino+"\nBanco: "+banco+"Favorito: "+fav);
     }
 
 }
