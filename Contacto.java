@@ -25,4 +25,5 @@ public class Contacto{
     public void enviarDinero(double monto){
        System.out.println("Transferencia enviada: \nDestinatario: "+nombre+"\nCuenta: "+cuentaDestino+"Monto: "monto);
     }
+    
 }
